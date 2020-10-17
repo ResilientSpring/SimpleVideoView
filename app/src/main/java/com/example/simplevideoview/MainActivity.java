@@ -105,6 +105,8 @@ public class MainActivity extends AppCompatActivity {
         mVideoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mediaPlayer) {
+
+                // a message to the user that something is going on provides a better user experience.
                 Toast.makeText(MainActivity.this, "Playback completed",Toast.LENGTH_SHORT).show();
 
                 // reset the playback and the MediaController to the beginning of the clip
