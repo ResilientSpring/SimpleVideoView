@@ -44,6 +44,9 @@ public class MainActivity extends AppCompatActivity {
         // Use setMediaController() to do the reverse connection, that is, to tell the VideoView that
         // the MediaController will be used to control it:
         mVideoView.setMediaController(controller);
+
+        // Show the controller on screen when the view is created.
+        controller.show(0);
     }
 
     @Override
