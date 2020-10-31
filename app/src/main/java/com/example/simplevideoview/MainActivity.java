@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
             mVideoView.seekTo(1);  // Use the seekTo() method to move the playback position to the current position.
         }
 
-       // mVideoView.start();
+       // mVideoView.start();   // Autoplay.
 
         mVideoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
